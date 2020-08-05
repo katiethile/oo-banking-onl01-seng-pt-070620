@@ -16,7 +16,7 @@ class Transfer
     if sender.valid? && receiver.valid? && @transfer_count < 1
       if sender.balance < @amount
         self.status = 'rejected'
-         "Transaction rejected. Please check your account balance."
+         return "Transaction rejected. Please check your account balance."
       end
     self.status = 'complete'
     @transfer_count += 1 
