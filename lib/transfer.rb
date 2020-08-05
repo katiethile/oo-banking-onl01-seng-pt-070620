@@ -21,6 +21,7 @@ class Transfer
     self.status = 'complete'
     @transfer_count += 1 
     sender.balance -= @amount
+    receiver.balance += @amount
   end 
 end
 end
