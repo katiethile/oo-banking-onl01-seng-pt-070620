@@ -22,6 +22,7 @@ class Transfer
     @transfer_count += 1 
     sender.balance -= @amount
     receiver.balance += @amount
+    elsif !sender.valid? || !receiver.valid? 
   end 
 end
 end
