@@ -19,7 +19,7 @@ class Transfer
          "Transaction rejected. Please check your account balance."
       end
     self.status = 'complete'
-    transfer_count += 1 
+    @transfer_count += 1 
     sender.balance -= @amount
   end 
 end
